@@ -1,0 +1,14 @@
+name: Purge jsDelivr Cache
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call jsDelivr purge
+        run: |
+          curl -X GET "https://purge.jsdelivr.net/gh/DimaFront12/files@main/widget.js"
