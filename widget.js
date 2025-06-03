@@ -69,7 +69,7 @@ define(['jquery', 'underscore', 'twigjs'], function ($, _, Twig) {
         return true;
       },
       onSave: function () {
-        alert('LALALALALLALALALALA');
+        alert('HAHHAHAHAHAHHAHHAHA');
         return true;
       },
       destroy: function () {
